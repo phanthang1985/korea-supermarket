@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Korea Supermarket - Chuyên phân phối thực phẩm nội địa Hàn Quốc, sản phẩm chăm sóc sức khỏe và quà tặng tuyển chọn.">
+  <title>Korea Supermarket | Thực phẩm nội địa Hàn Quốc</title>
+  <link rel="icon" href="assets/logo-emblem.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="topbar"><span>Miễn phí giao hàng toàn quốc cho đơn từ 1.000.000đ</span><span class="topbarRight">Tư vấn: thông tin đang cập nhật · 08:00–21:00</span></div>
+    <header class="header">
+      <a class="brand" href="#top" aria-label="Korea Supermarket trang chủ"><img src="assets/logo-horizontal.png" alt="Korea Supermarket - Chuyên phân phối thực phẩm nội địa Hàn Quốc"></a>
+      <label class="search"><span class="srOnly">Tìm kiếm sản phẩm</span><input id="searchInput" placeholder="Bạn đang tìm sản phẩm nào?"><button id="searchButton">Tìm kiếm</button></label>
+      <div class="headerActions"><button class="plainButton">Tài khoản</button><button class="cartButton" id="cartButton">Giỏ hàng <span id="cartCount">0</span></button></div>
+    </header>
+    <nav class="nav" aria-label="Điều hướng chính"><a class="navFeatured" href="#categories">☰ Danh mục sản phẩm</a><a href="#top">Trang chủ</a><a href="#about">Về chúng tôi</a><a href="#products">Sản phẩm</a><a href="#gift">Quà doanh nghiệp</a><a href="#journal">Góc sức khỏe</a><a href="#contact">Liên hệ</a></nav>
+
+    <section class="hero" id="top">
+      <div class="heroContent"><span class="eyebrow">CHUYÊN PHÂN PHỐI THỰC PHẨM NỘI ĐỊA HÀN QUỐC</span><h1>Tinh hoa Hàn Quốc.<br><em>Trọn vẹn cho gia đình.</em></h1><p>Korea Supermarket tuyển chọn sản phẩm chăm sóc sức khỏe và quà tặng Hàn Quốc, chú trọng nguồn gốc minh bạch và trải nghiệm mua sắm đáng tin cậy.</p><div class="heroButtons"><a class="primaryButton" href="#products">Khám phá sản phẩm</a><a class="secondaryButton" href="#gift">Chọn quà tặng</a></div><div class="heroStats"><span><b>100%</b> nguồn gốc rõ ràng</span><span><b>30 ngày</b> hỗ trợ đổi trả</span><span><b>1:1</b> tư vấn tận tâm</span></div></div>
+      <div class="heroVisual" aria-label="Korea Supermarket"><div class="sun"></div><div class="leaf leafOne"></div><div class="leaf leafTwo"></div><div class="brandShowcase"><img src="assets/logo-emblem.png" alt="Korea Supermarket"></div></div>
+    </section>
+
+    <section class="categoryStrip" id="categories">
+      <a href="#products" class="categoryCard" data-filter="Nhân sâm"><span class="categoryIcon">人</span><span><b>Nhân sâm</b><small>Sâm củ, cao sâm và tinh chất</small></span><i>→</i></a>
+      <a href="#products" class="categoryCard" data-filter="Đông trùng"><span class="categoryIcon">✦</span><span><b>Đông trùng</b><small>Tinh chất và viên uống</small></span><i>→</i></a>
+      <a href="#products" class="categoryCard" data-filter="Linh chi"><span class="categoryIcon">◒</span><span><b>Linh chi</b><small>Nấm và cao linh chi</small></span><i>→</i></a>
+      <a href="#products" class="categoryCard" data-filter="Quà sức khỏe"><span class="categoryIcon">礼</span><span><b>Quà sức khỏe</b><small>Hộp quà chỉn chu, tinh tế</small></span><i>→</i></a>
+    </section>
+
+    <section class="needsSection"><div class="sectionHeading splitHeading"><div><p class="eyebrow">CHỌN THEO NHU CẦU</p><h2>Hiểu bạn cần gì</h2></div><p>Gợi ý nhanh theo mục tiêu chăm sóc sức khỏe. Thông tin mang tính tham khảo, không thay thế tư vấn y tế.</p></div><div class="needGrid"><a href="#products" class="needCard"><span>01</span><b>Bồi bổ thể lực</b><i>Khám phá →</i></a><a href="#products" class="needCard"><span>02</span><b>Hỗ trợ tuần hoàn</b><i>Khám phá →</i></a><a href="#products" class="needCard"><span>03</span><b>Chăm sóc gan</b><i>Khám phá →</i></a><a href="#products" class="needCard"><span>04</span><b>Xương khớp</b><i>Khám phá →</i></a><a href="#products" class="needCard"><span>05</span><b>Đề kháng</b><i>Khám phá →</i></a><a href="#products" class="needCard"><span>06</span><b>Quà biếu cao cấp</b><i>Khám phá →</i></a></div></section>
+
+    <section class="productsSection" id="products"><div class="sectionHeading"><p class="eyebrow">TUYỂN CHỌN CHO BẠN</p><h2>Sản phẩm nổi bật</h2><p>Những lựa chọn được yêu thích cho gia đình và quà biếu.</p></div><div class="filterRow" id="filterRow" aria-label="Lọc sản phẩm"></div><p class="searchNote" id="searchNote" hidden></p><div class="productGrid" id="productGrid"></div><div class="noResults" id="noResults" hidden>Chưa tìm thấy sản phẩm phù hợp. Hãy thử một từ khóa khác.</div></section>
+
+    <section class="promo" id="gift"><div class="promoArt"><div class="giftLarge"><span>礼</span><b>THE ART OF GIVING</b></div><div class="ribbon"></div></div><div class="promoCopy"><p class="eyebrow">QUÀ TẶNG DOANH NGHIỆP</p><h2>Quà đẹp để trao.<br>Tâm ý để nhớ.</h2><p>Tư vấn giftset theo ngân sách, cá nhân hóa thiệp và hộp quà cho đối tác, khách hàng và đội ngũ của bạn.</p><ul><li>Thiết kế theo nhận diện doanh nghiệp</li><li>Chiết khấu linh hoạt theo số lượng</li><li>Giao hàng nhiều địa chỉ toàn quốc</li></ul><a href="#contact" class="primaryButton">Nhận tư vấn quà tặng</a></div></section>
+
+    <section class="story" id="about"><div class="storyCopy"><p class="eyebrow">VỀ KOREA SUPERMARKET</p><h2>Chọn kỹ từ nguồn.<br>Tận tâm khi trao.</h2><p>Korea Supermarket chuyên phân phối thực phẩm nội địa Hàn Quốc, phát triển trên ba nguyên tắc: minh bạch nguồn gốc, lựa chọn có trách nhiệm và tư vấn đúng nhu cầu.</p><a href="#journal">Câu chuyện của chúng tôi →</a></div><div class="values"><article><span>01</span><b>Nguồn gốc minh bạch</b><p>Thông tin xuất xứ, đơn vị sản xuất và hướng dẫn sử dụng được trình bày rõ ràng.</p></article><article><span>02</span><b>Chọn lọc có tiêu chuẩn</b><p>Sản phẩm được đánh giá về hồ sơ, bao bì, điều kiện bảo quản trước khi lên kệ.</p></article><article><span>03</span><b>Tư vấn có trách nhiệm</b><p>Không phóng đại công dụng; luôn khuyến nghị hỏi chuyên gia y tế khi cần thiết.</p></article><article><span>04</span><b>Đồng hành sau mua</b><p>Hỗ trợ hướng dẫn dùng, bảo quản và xử lý phản hồi nhanh chóng.</p></article></div></section>
+
+    <section class="journal" id="journal"><div class="sectionHeading splitHeading"><div><p class="eyebrow">CẨM NANG SỐNG KHỎE</p><h2>Hiểu đúng, chọn đúng</h2></div><a href="#journal">Xem tất cả bài viết →</a></div><div class="articleGrid"><article class="articleFeature"><div class="articleImage ginsengImage">人</div><small>KIẾN THỨC NHÂN SÂM · 8 PHÚT</small><h3>Nhân sâm 6 năm tuổi: điều gì thực sự tạo nên khác biệt?</h3><p>Cách đọc nhãn, nhận biết dạng sản phẩm và những lưu ý cơ bản trước khi sử dụng.</p></article><article><div class="articleImage giftImage">礼</div><small>NGHỆ THUẬT TẶNG QUÀ · 5 PHÚT</small><h3>Chọn quà sức khỏe theo độ tuổi và dịp tặng</h3></article><article><div class="articleImage teaImage">茶</div><small>SỐNG KHỎE · 6 PHÚT</small><h3>5 thói quen nhỏ giúp duy trì năng lượng mỗi ngày</h3></article></div></section>
+
+    <section class="newsletter" id="contact"><div><p class="eyebrow">KẾT NỐI CÙNG KOREA SUPERMARKET</p><h2>Nhận ưu đãi và kiến thức hữu ích mỗi tuần</h2></div><form id="newsletterForm"><input aria-label="Email nhận tin" placeholder="Email của bạn" type="email" required><button>Đăng ký</button></form></section>
+    <footer><div class="footerGrid"><div><a class="brand footerBrand" href="#top"><img src="assets/logo-horizontal.png" alt="Korea Supermarket"></a><p>Thực phẩm nội địa và quà tặng Hàn Quốc được tuyển chọn minh bạch, chỉn chu.</p></div><div><b>Khám phá</b><a href="#products">Sản phẩm</a><a href="#gift">Quà doanh nghiệp</a><a href="#journal">Góc sức khỏe</a></div><div><b>Hỗ trợ</b><a href="#contact">Liên hệ</a><a href="#contact">Chính sách giao hàng</a><a href="#contact">Đổi trả & hoàn tiền</a></div><div><b>Liên hệ</b><p>Thông tin liên hệ đang cập nhật<br>Hà Nội · TP. Hồ Chí Minh</p></div></div><div class="footerBottom"><span>© 2026 Korea Supermarket. Website mẫu dùng cho mục đích trình diễn.</span><span>Điều khoản · Bảo mật</span></div></footer>
+
+    <div class="overlay" id="cartOverlay" hidden><aside class="cartDrawer" aria-label="Giỏ hàng"><button class="close" id="closeCart">×</button><h2>Giỏ hàng của bạn</h2><div id="cartContent"></div><button class="primaryButton full" id="continueShopping">Tiếp tục mua sắm</button></aside></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
